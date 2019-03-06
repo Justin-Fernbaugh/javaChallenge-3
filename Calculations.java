@@ -38,9 +38,10 @@ class Calculations
         {
             answer = Math.sqrt( (Math.pow(a,2) + Math.pow(b,2)) );
         }
-
         return "Your answer for the missing side is: " + answer;
     }
+
+    
 
 
 
