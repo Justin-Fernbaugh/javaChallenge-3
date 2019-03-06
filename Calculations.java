@@ -27,16 +27,16 @@ class Calculations
         if(a == 0)
         {
             answer = Math.pow(c,2) - Math.pow(b,2);
-            answer = Math.sqrt(answer, 2);
+            answer = Math.sqrt(answer);
         }
         else if(b == 0)
         {
             answer = Math.pow(c,2) - Math.pow(a,2);
-            answer = Math.sqrt(answer, 2);
+            answer = Math.sqrt(answer);
         }
         else if(c == 0)
         {
-            answer = Math.sqrt( (Math.pow(a,2) + Math.pow(b,2)) , 2);
+            answer = Math.sqrt( (Math.pow(a,2) + Math.pow(b,2)) );
         }
 
         return "Your answer for the missing side is: " + answer;
