@@ -15,7 +15,7 @@ class Calculations
         double eValue = ( -b + Math.sqrt(dValue) ) / ( 2 * a );
         double fValue = ( -b - Math.sqrt(dValue) ) / ( 2 * a );
 
-        CaluclatedValue = "Your answers are: " + eValue + " and " + fValue;
+        calculatedValue = "Your answers are: " + eValue + " and " + fValue;
 
         return calculatedValue;
     }
