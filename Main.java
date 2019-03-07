@@ -9,6 +9,9 @@ class Main
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        applications.add("Quadratic Formula");
+        applications.add("Pythagorean formula");
+        applications.add("Flashcards");
         startupEntries();
 
 
@@ -57,7 +60,7 @@ class Main
     
     public static void startupEntries()
     {
-        System.out.println("Choose which app you'd like to use.");
+        System.out.println("Choose which app you'd like to use. (By Name)");
         for(int i = 0; i < applications.size(); i++)
         {
             System.out.println(String.format("%s. %s", i, applications.get(i)));
@@ -67,14 +70,13 @@ class Main
         for(int i = 0; i < applications.size(); i++)
         {
             //if statement to check if input equals 
-            if(userInput.equals(applications.get(i).toLowerCase()));
+            if(userInput.equals(applications.get(i)));
             {
                 //check what was selected and then use that app.
                 runApp(i);
+                break;
             }
         }
-
-        System.out.println("");
     }
 
 }
