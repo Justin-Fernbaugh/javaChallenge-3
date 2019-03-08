@@ -9,7 +9,6 @@ class Calculations
 
     public String calcQuad(double a,double b,double c)
     {
-        System.out.println("does this shit work?");
         String calculatedValue = "";
         
         /*
