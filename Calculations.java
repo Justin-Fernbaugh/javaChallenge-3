@@ -9,15 +9,28 @@ class Calculations
 
     public String calcQuad(double a,double b,double c)
     {
+        System.out.println("does this shit work?");
         String calculatedValue = "";
         
+        /*
         double dValue = Math.pow(b,2) - 4 * a * c;
         double eValue = ( -b + Math.sqrt(dValue) ) / ( 2 * a );
         double fValue = ( -b - Math.sqrt(dValue) ) / ( 2 * a );
+        */
+        double answer1 = (-b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+        double answer2 = (-b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
 
-        calculatedValue = "Your answers are: " + eValue + " and " + fValue;
-
+        if (Double.isNaN(answer1) || Double.isNaN(answer2))
+        {
+            calculatedValue = ("Answer contains imaginary numbers");
+        } 
+        else
+        {
+            calculatedValue = "Your answers are: " + answer1 + " and " + answer2;
+        } 
         return calculatedValue;
+
+        
     }
 
     public String calcPythag(double a, double b, double c)
