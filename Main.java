@@ -44,6 +44,17 @@ class Main
     
     public static void flashcardsInterface()
     {
+        String userInputA = "";
+        String userInputB = "";
+        while(true)
+        {
+            System.out.println("Enter flashcard side A: ");
+            userInputA = scanner.next();
+            flashcards.addQuestion(userInputA);
+            System.out.println("Enter flashcard side B: ");
+            userInputB = scanner.nextLine();
+            flashcards.addAnswer(userInputB);
+        }
         flashcards.startFlashcards();
     }
 
