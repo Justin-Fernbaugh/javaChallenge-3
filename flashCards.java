@@ -44,6 +44,7 @@ class flashCards {
             else if(userInput.equals("stop"))
             {
                 System.out.println("stop not added yet.");
+                break;
             }
             else
             {
