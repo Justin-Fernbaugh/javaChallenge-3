@@ -19,7 +19,7 @@ class Main
     }
 
 
-    public static String pythagoreanInterface()
+    public static void pythagoreanInterface()
     {
         System.out.println("Enter a: ");
         int aValue = scanner.nextInt();
@@ -27,11 +27,11 @@ class Main
         int bValue = scanner.nextInt();
         System.out.println("Enter c: ");
         int cValue = scanner.nextInt();
-        return((calculate.calcPythag(aValue, bValue, cValue)));
+        System.out.println((calculate.calcPythag(aValue, bValue, cValue)));
     }
 
 
-    public static String quadraticInterface()
+    public static void quadraticInterface()
     {
         System.out.println("Enter a: ");
         int aValue = scanner.nextInt();
@@ -39,7 +39,7 @@ class Main
         int bValue = scanner.nextInt();
         System.out.println("Enter c: ");
         int cValue = scanner.nextInt();
-        return((calculate.calcQuad(aValue, bValue, cValue)));
+        System.out.println((calculate.calcQuad(aValue, bValue, cValue)));
     }
     
     public static void flashcardsInterface()
