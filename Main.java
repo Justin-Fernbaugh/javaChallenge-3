@@ -5,6 +5,7 @@ class Main
 {
 
     public static Calculations calculate = new Calculations();
+    public static flashCards flashcards = new flashCards();
     public static ArrayList<String> applications = new ArrayList<String>();
     public static Scanner scanner = new Scanner(System.in);
 
@@ -30,9 +31,20 @@ class Main
     }
 
 
-    public static double quadraticInterface()
+    public static String quadraticInterface()
     {
-        return(0.0);
+        System.out.println("Enter a: ");
+        int aValue = scanner.nextInt();
+        System.out.println("Enter b: ");
+        int bValue = scanner.nextInt();
+        System.out.println("Enter c: ");
+        int cValue = scanner.nextInt();
+        return((calculate.calcQuad(aValue, bValue, cValue)));
+    }
+    
+    public static void flashcardsInterface()
+    {
+        flashcards.startFlashcards();
     }
 
     /*
@@ -65,18 +77,16 @@ class Main
         {
             System.out.println(String.format("%s. %s", i, applications.get(i)));
         }
-        String userInput = scanner.nextLine();
-
-        for(int i = 0; i < applications.size(); i++)
-        {
-            //if statement to check if input equals 
-            if(userInput.equals(applications.get(i)));
-            {
-                //check what was selected and then use that app.
-                runApp(i);
-                break;
-            }
+        try {
+            int userInput = scanner.nextInt();
+            runApp(userInput);
+            
+        } catch (Exception e) {
+            //TODO: handle exception
+            System.out.println("Invalid input.");
         }
+
+
     }
 
 }
