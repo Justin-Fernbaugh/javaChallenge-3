@@ -48,11 +48,19 @@ class Main
         String userInputB = "";
         while(true)
         {
-            System.out.println("Enter flashcard side A: ");
+            System.out.println("Enter flashcard side A (q to stop): ");
             userInputA = scanner.next();
+            if(userInputA.equals("q"))
+            {
+                break;
+            }
             flashcards.addQuestion(userInputA);
-            System.out.println("Enter flashcard side B: ");
+            System.out.println("Enter flashcard side B (q to stop): ");
             userInputB = scanner.nextLine();
+            if(userInputB.equals("q"))
+            {
+                break;
+            }
             flashcards.addAnswer(userInputB);
         }
         flashcards.startFlashcards();
@@ -78,6 +86,7 @@ class Main
         else if(input == 2)
         {
             System.out.println("Starting flashcards.");
+            flashcardsInterface();
         }
     }
     
