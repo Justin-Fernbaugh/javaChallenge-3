@@ -92,7 +92,7 @@ class Main
     
     public static void startupEntries()
     {
-        System.out.println("Choose which app you'd like to use. (By Name)");
+        System.out.println("Choose which app you'd like to use. (By Number)");
         for(int i = 0; i < applications.size(); i++)
         {
             System.out.println(String.format("%s. %s", i, applications.get(i)));
