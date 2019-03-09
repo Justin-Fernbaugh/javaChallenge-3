@@ -49,7 +49,7 @@ class Main
         while(true)
         {
             System.out.println("Enter flashcard side A (q to stop): ");
-            userInputA = scanner.next();
+            userInputA = scanner.nextLine();
             if(userInputA.equals("q"))
             {
                 break;
