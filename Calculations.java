@@ -11,11 +11,6 @@ class Calculations
     {
         String calculatedValue = "";
         
-        /*
-        double dValue = Math.pow(b,2) - 4 * a * c;
-        double eValue = ( -b + Math.sqrt(dValue) ) / ( 2 * a );
-        double fValue = ( -b - Math.sqrt(dValue) ) / ( 2 * a );
-        */
         double answer1 = (-b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
         double answer2 = (-b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
 
